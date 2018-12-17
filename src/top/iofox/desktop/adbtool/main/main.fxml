@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXListView?>
-<?import com.jfoenix.controls.JFXTabPane?>
-<?import com.jfoenix.controls.JFXTextArea?>
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <StackPane fx:id="rootPane" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.iofox.desktop.adbtool.main.Controller">
     <SplitPane dividerPositions="0.7369477911646586" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
         <AnchorPane>
@@ -38,24 +27,19 @@
                             <Accordion prefHeight="330.0" prefWidth="253.0">
                                 <panes>
                                     <TitledPane animated="false" text="设备操作">
-                                        <content>
-                                            <VBox prefHeight="200.0" prefWidth="100.0">
-                                    <children>
-                                       <JFXButton mnemonicParsing="false" text="重启手机" />
-                                       <JFXButton mnemonicParsing="false" text="重启到Recovery模式" />
-                                       <JFXButton mnemonicParsing="false" text="重启到Fastboot模式" />
-                                    </children></VBox>
-                                        </content>
+                                        <VBox prefHeight="200.0" prefWidth="100.0">
+                                            <JFXButton mnemonicParsing="false" text="重启手机"/>
+                                            <JFXButton mnemonicParsing="false" text="重启到Recovery模式"/>
+                                            <JFXButton mnemonicParsing="false" text="重启到Fastboot模式"/>
+                                        </VBox>
                                     </TitledPane>
                                     <TitledPane animated="false" text="untitled 2">
-                                        <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                        </content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                                    prefWidth="200.0"/>
                                     </TitledPane>
                                     <TitledPane animated="false" text="untitled 3">
-                                        <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                        </content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                                                    prefWidth="200.0"/>
                                     </TitledPane>
                                 </panes>
                             </Accordion>
